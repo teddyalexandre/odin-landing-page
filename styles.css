@@ -9,11 +9,41 @@
     background-color: #1F2937;
 }
 
-.main-text {
-    /* This website is awesome */
+.hero {
+    padding-bottom: 40px;
+}
+
+.header-text-img {
+    display: flex;
+    flex-direction: row;
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.header-text-img .header-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header-text .main {
+    /* This text is awesome */
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.header-text .secondary,
+.header-text-img .image {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-text .button {
+    background-color: #3882F6;
 }
 
 .hero h2 {
@@ -30,15 +60,25 @@
     color: #E5E7EB;
 }
 
-.img {
+.header-text-img .image {
     /* Background gray rectangle for the image */
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
     background-color: gray;
+    top: 50%;
+    left: 50%;
+    flex-grow: 4;
 }
 
 .button {
     background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 25px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid #3882F6;
 }
 
 .h1 {
@@ -48,35 +88,15 @@
     font-size: 36px;
 }
 
-.quote p {
-    /* Quote text */
-    font-size: 36px;
-    font-style: italic;
-    color: #1F2937;
-    font-weight: 300;
-}
-
-.quote {
-    /* Quote background */
-    background-color: #E5E7EB;
-}
-
 .footer {
     text-align: center;
-}
-
-.rounded-circles {
-    border-radius: 25px;
-    width: 200px;
-    height: 150px;
-    margin: 20px;
-    border: 2px solid #3882F6;
+    color: #F9FAF8;
+    padding-top: 10%;
 }
 
 .hero,
 .boxes,
 .footer,
-.quote,
 .third-section {
     padding-left: 10%;
     padding-right: 10%;
@@ -103,4 +123,69 @@
 .header-links .link-h {
     font-size: 18px;
     flex-grow: 1;
+}
+
+.rd-info {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-top: 20px;
+}
+
+.rounded-and-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.single-elt {
+    border-radius: 25px;
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    border: 2px solid #3882F6;
+}
+
+.quote {
+    /* Quote background */
+    background-color: #E5E7EB;
+}
+
+.quotetext {
+    /* Quote text */
+    margin: 10%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.author {
+    margin: 10%;
+    text-align: right;
+    font-weight: 800;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 10%;
+    border: 2px solid #3882F6;
+}
+
+.small-text {
+    font-weight: 800;
+}
+
+.button-two {
+    border: 2px solid #F9FAF8;
+    border-radius: 10px;
+    color: #F9FAF8;
+    background-color: #3882F6;
 }

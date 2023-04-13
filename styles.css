@@ -1,0 +1,64 @@
+.body {
+    font-family: "Roboto";
+}
+
+.hero,
+.footer {
+    /* Background color footer and hero image */
+    background-color: #1F2937;
+}
+
+.main-text {
+    /* This website is awesome */
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+.hero h2 {
+    /* Header Logo */
+    size: 24px;
+    color: #F9FAF8;
+}
+
+.hero {
+    /* Secondary text */
+    size: 18px;
+    color: #E5E7EB;
+}
+
+.img {
+    /* Background gray rectangle for the image*/
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+}
+
+.button {
+    background-color: #3882F6;
+}
+
+.boxes,
+.h1 {
+    /* Information header text */
+    font-weight: 800;
+    color: #1F2937;
+    font-size: 36px;
+}
+
+.quote p {
+    /* Quote text */
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.quote {
+    /* Quote background */
+    background-color: #E5E7EB;
+}
+
+.footer {
+    text-align: center;
+}

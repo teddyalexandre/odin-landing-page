@@ -20,6 +20,7 @@
     /* Header Logo */
     size: 24px;
     color: #F9FAF8;
+    margin-top: px;
 }
 
 .hero p,
@@ -40,7 +41,6 @@
     background-color: #3882F6;
 }
 
-.boxes,
 .h1 {
     /* Information header text */
     font-weight: 800;
@@ -80,4 +80,27 @@
 .third-section {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: #E5E7EB;
+    padding-top: 12px;
+}
+
+.header-links .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links .space {
+    flex-grow: 10;
+}
+
+.header-links .link-h {
+    font-size: 18px;
+    flex-grow: 1;
 }

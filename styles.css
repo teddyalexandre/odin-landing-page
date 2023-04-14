@@ -1,6 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto');
-.body {
+body {
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 
 .hero,
@@ -18,7 +19,6 @@
     flex-direction: row;
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: 800;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -26,7 +26,7 @@
 .header-text-img .header-text {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 0px;
 }
 
 .header-text .main {
@@ -62,23 +62,29 @@
 
 .header-text-img .image {
     /* Background gray rectangle for the image */
-    width: 500px;
-    height: 200px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: gray;
     top: 50%;
     left: 50%;
-    flex-grow: 4;
+    flex: 1 1 0px;
+}
+
+.placeholder {
+    text-align: center;
 }
 
 .button {
-    background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 25px;
-    width: 80px;
+    border-radius: 8px;
+    width: 100px;
     height: 40px;
     margin-top: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
     border: 2px solid #3882F6;
+    font-weight: bold;
 }
 
 .h1 {
@@ -91,13 +97,17 @@
 .footer {
     text-align: center;
     color: #F9FAF8;
-    padding-top: 10%;
+    padding: 4rem;
 }
 
 .hero,
 .boxes,
-.footer,
-.third-section {
+.footer {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.quote {
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -123,6 +133,7 @@
 .header-links .link-h {
     font-size: 18px;
     flex-grow: 1;
+    text-align: center;
 }
 
 .rd-info {
@@ -130,16 +141,24 @@
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
-    margin-top: 20px;
+    margin: 10%;
 }
 
 .rounded-and-text {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 10%;
 }
 
 .single-elt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgrect {
     border-radius: 25px;
     width: 200px;
     height: 150px;
@@ -147,14 +166,25 @@
     border: 2px solid #3882F6;
 }
 
+.imgtext {
+    width: 200px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
 .quote {
     /* Quote background */
     background-color: #E5E7EB;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .quotetext {
     /* Quote text */
     margin: 10%;
+    top: 50%;
+    left: 50%;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
@@ -165,6 +195,7 @@
     margin: 10%;
     text-align: right;
     font-weight: 800;
+    font-size: 24px;
 }
 
 .third-section {
@@ -186,6 +217,8 @@
 .button-two {
     border: 2px solid #F9FAF8;
     border-radius: 10px;
+    width: 100px;
+    font-weight: 800;
     color: #F9FAF8;
     background-color: #3882F6;
 }
